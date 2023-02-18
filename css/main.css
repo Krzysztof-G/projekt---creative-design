@@ -1,0 +1,288 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Raleway', sans-serif;
+}
+/* nawigacja */
+
+.nav {
+	height: 50px;
+	background-color: #333;
+	text-align: center;
+	line-height: 50px;
+	font-size: 0;
+}
+.nav-item {
+	display: inline-block;
+	transition: transform 0.3s;
+}
+.nav-item a {
+	padding: 0 50px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1rem;
+	letter-spacing: 0.2rem;
+	transition: all 0.3s;
+}
+.nav-item a:hover {
+	color: rgb(35, 105, 225);
+	text-shadow: 0px 0px 5px rgb(9, 3, 68);
+}
+.nav-item:hover {
+	transform: scale(1.3);
+}
+
+/* header */
+
+.header-img {
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	background-image: url('../img/planet-g5c814c188_1920.jpg');
+	background-size: cover;
+	background-position: 0 50%;
+}
+.header-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	z-index: 5;
+	letter-spacing: 0.2rem;
+	transform: translate(-50%, -50%);
+}
+.header-text h1 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 5rem;
+	transition: 0.3s;
+	text-shadow: 0px 0px 30px rgb(65, 105, 225);
+}
+.header-text p {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 1.3rem;
+}
+.header-bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(1, 5, 17, 0.4);
+}
+
+/* main */
+
+main {
+	width: 1200px;
+	margin: 50px auto;
+}
+
+h2 {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.about-us-box {
+	position: relative;
+	height: 300px;
+	margin: 40px 0;
+	background-attachment: fixed;
+	background-position: center;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	overflow: hidden;
+	filter: blur(30%);
+}
+.top {
+	background-image: url('../img/coffee-g11b92e6e3_1920.jpeg');
+}
+.middle {
+	background-image: url('../img/startup-gd36d7fe5c_1920.jpg');
+}
+.bottom {
+	background-image: url('../img/laptop-g85139d1d1_1920.jpg');
+}
+.about-us-text {
+	position: absolute;
+	bottom: 20px;
+	padding: 20px 40px;
+	text-align: center;
+	color: #fff;
+}
+.about-us-text h3 {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.about-us-bg {
+	position: absolute;
+	bottom: 0;
+	height: 45%;
+	width: 100%;
+	background-color: rgba(1, 5, 17, 0.8);
+}
+
+/* footer */
+
+footer {
+	height: 80px;
+	line-height: 80px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	font-size: 1.25rem;
+}
+.icon-footer-box {
+	margin-left: 20px;
+}
+.icon-footer-box a {
+	margin: 0 5px;
+	color: #fff;
+	font-size: 1.9rem;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+.icon-footer-box a:hover {
+	color: rgb(35, 105, 225);
+}
+
+/* usługi */
+
+.services-list {
+	margin: 0 auto;
+	width: 300px;
+}
+
+.services-list li {
+	height: 50px;
+}
+/* cennik */
+
+.tabele {
+	position: relative;
+	width: 70vw;
+	height: 650px;
+	margin: 0 auto;
+	padding: 20px 0;
+	background-color: rgba(65, 105, 225, 0.061);
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	box-shadow: 0 0 5px rgba(65, 105, 225, 0.382);
+	backdrop-filter: blur(5px);
+}
+
+.price {
+	position: absolute;
+	width: 350px;
+	height: 550px;
+	margin: 30px auto;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	box-shadow: 0 0 5px rgb(65, 105, 225);
+	transition: 0.3s;
+}
+.price h1 {
+	width: 100%;
+	height: 75px;
+	color: #fff;
+	background-color: rgba(89, 131, 252, 1);
+	background-image: linear-gradient(90deg, rgb(65, 105, 225) 60%, rgba(41, 53, 86, 1) 100%);
+	border-top-left-radius: 50px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 65px;
+}
+.price-content {
+	width: 100%;
+	height: 300px;
+}
+.price-content p {
+	padding: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.btn-more button {
+	position: absolute;
+	bottom: 0;
+	left: 21%;
+	width: 200px;
+	height: 75px;
+	margin-bottom: 10px;
+	color: #fff;
+	background-color: rgba(89, 131, 252, 1);
+	background-image: linear-gradient(90deg, rgb(65, 105, 225) 0%, rgba(41, 53, 86, 1) 100%);
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(65, 105, 225, 0.382);
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.btn-more button:hover {
+	background-color: rgba(89, 131, 252, 1);
+	background-image: linear-gradient(90deg, rgb(22, 80, 255) 0%, rgb(19, 47, 123) 100%);
+	box-shadow: 0 0 5px rgb(6, 45, 152);
+	transform: scale(1.05);
+}
+.price:hover {
+	box-shadow: 0 0 10px rgb(65, 105, 225);
+	transform: scale(1.05);
+}
+.basic {
+	left: 4%;
+}
+.basic-plus {
+	left: 36%;
+}
+.vip {
+	left: 68%;
+}
+
+/* kontakt */
+
+.contact {
+	position: relative;
+	width: 70vw;
+	height: 500px;
+	margin: 0 auto;
+	padding: 40px 0;
+	background-color: rgba(65, 105, 225, 0.061);
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	box-shadow: 0 0 5px rgba(65, 105, 225, 0.382);
+	backdrop-filter: blur(5px);
+}
+
+.icon-contact-box a {
+	display: flex;
+	font-size: 2rem;
+	text-decoration: none;
+}
+.icon-contact-box p {
+	display: flex;
+	margin-left: 50px;
+	padding: 5px 0;
+	font-size: 2rem;
+	color: #000;
+}
+.icon-contact-box i {
+	color: rgb(35, 105, 225);
+	margin-right: 30px;
+}
+span{
+	margin-top: 50px;
+}
+.location {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	width: 600px;
+	height: 450px;
+	box-shadow: 0 0 10px rgba(65, 105, 225, 0.382);
+}
